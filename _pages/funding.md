@@ -11,7 +11,7 @@ header:
     - label: "Patreon"
       url: "https://www.patreon.com/libgdx"
 
-excerpt: "libGDX is a cross-platform Java game development framework that lets you deploy to Windows, macOS, Linux, Android, iOS and HTML5/WebGL with a single code base. It is free, Apache 2 licensed and allows anyone to create the games of their dreams."
+excerpt: "From paddling townships to the chimes of the greatest cities, markets crowd with the exchange of wears. Across the hilltops away, a crew of toolsmiths follow the blueprints to create factory machinery - replicable ones at that. Finally, at the port side bays, in an undistinguished warehouse, a new line of ships will break the waves. A new era is beginning. Don't get left behind."
 ---
 
 libGDX is being developed lovingly and not for profit by over [300 volunteers](https://github.com/libgdx/libgdx/graphs/contributors) across the globe. Most of us work on libGDX in our free time. Some can make it part of their day job. But all of us contribute our code under the very permissive Apache 2 license, which means you can use our code in commercial and non-commercial projects without any strings or license fees attached.
