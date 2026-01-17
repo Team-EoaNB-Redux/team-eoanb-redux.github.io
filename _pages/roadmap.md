@@ -1,0 +1,66 @@
+---
+permalink: /roadmap/
+title: "Roadmap"
+classes: wide2
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.45"
+  overlay_image: /assets/images/roadmap.jpg
+  caption: "Photo credit: [**Slidebean**](https://unsplash.com/photos/iW9oP7Ljkbg)"
+
+excerpt: "Here you can learn more about our plans for the future of libGDX and what to expect from upcoming updates."
+---
+
+<!--
+Available status values:
+
+{% include status.html is='planned' %} // is planned for the future
+{% include status.html is='wip' %} // work in progress
+{% include status.html is='close' %} // nearly done
+{% include status.html is='done' %} //in the next release
+ -->
+
+This is a broad list of the **major features and improvements** we have currently planned for libGDX. As we're all doing this in our spare time, we refrained from giving any concrete dates and deadlines – plans are always subject to change. If you are interested in helping out with any of these plans, be sure to hit us up on [Discord](https://libgdx.com/community/discord/)!
+
+There are also a lot of other improvements in the works, which may not be not big enough to be mentioned on here, but are no less noteworthy. If you want to keep up to date with what is going on with libGDX at the moment, be sure to read our **regular [Status Reports](/news/devlog/)**.
+
+<table>
+  <tr>
+    <td><h4>AWT Support for LWJGL 3</h4>
+    <br>Currently, AWT and Swing are not working with the LWJGL 3 backend due to some restrictions of GLFW. We have some ideas on how to work around this. Help with this is appreciated!<sup><a href="https://github.com/libgdx/libgdx/pull/6247">1</a>, <a href="https://github.com/libgdx/libgdx/pull/6772">2</a></sup></td>
+    <td>{% include status.html is='planned' %}</td>
+  </tr>
+  <tr>
+    <td><h4>Box2D Update</h4>
+    <br>In July 2020, the original <a href="https://github.com/erincatto/box2d">Box2D</a> received its first update in over 6 years! Now we're working to include those changes in libGDX.<sup><a href="https://github.com/libgdx/libgdx/issues/5948">1</a>, <a href="https://github.com/libgdx/gdx-box2d">2</a></sup></td>
+    <td>{% include status.html is='wip' %}</td>
+  </tr>
+  <tr>
+    <td><h4>Console Support</h4>
+    <br>Various users have explored the topic of libGDX console support.<sup><a href="/wiki/articles/console-support">1</a></sup></td>
+    <td>{% include status.html is='planned' %}</td>
+  </tr>
+  <tr>
+    <td><h4>Geometry/Tesselation/Compute Shaders</h4>
+    <br>We really want to look into geometry, tesselation and compute shaders. However, we can't give any promises yet, as this is still just a far-off idea.<sup><a href="https://github.com/libgdx/libgdx/pull/4963">1</a>, <a href="https://github.com/mgsx-dev/libgdx/tree/modern-shaders/compute">2</a></sup></td>
+    <td>{% include status.html is='wip' %}</td>
+  </tr>
+  <tr>
+    <td><h4>gdx-video Resurrection</h4>
+    <br>We have some plans drawn up to revive the old <a href="https://github.com/libgdx/gdx-video">gdx-video</a> extension. The first snapshots are now available!</td>
+    <td>{% include status.html is='done' %}</td>
+  </tr>
+  <tr>
+    <td><h4 id="teavm">Kotlin-Compatible Web Backend</h4>
+    <br>A web backend that is compatible with other JVM languages has been talked about for a couple of years. The now existing third-party solutions rely on TeaVM and Bytecoder.<sup><a href="https://github.com/squins/gdx-backend-bytecoder">1</a>, <a href="https://github.com/Anuken/Arc/tree/6e9fd338866c05cd42ec20f26ec7fa7c3a25d6d5/backends/backend-teavm">2</a>, <a href="https://github.com/xpenatan/gdx-html5-tools">3</a></sup></td>
+    <td>{% include status.html is='close' %}</td>
+  </tr>
+  <tr>
+    <td><h4>TiledMap Extension</h4>
+    <br>Our TiledMap implementation is not as up to date as we would like it to be. Therefore, we are considering to move it to its own repo to separate its release cycle from libGDX's and to assess its compatibility with other map editors than <a href="https://www.mapeditor.org">Tiled</a>.<sup><a href="https://github.com/libgdx/libgdx/issues?q=is%3Aissue+is%3Aopen+label%3Atilemap+">1</a>, <a href="https://github.com/libgdx/libgdx/pulls?q=is%3Apr+is%3Aopen+label%3Atilemap">2</a></sup></td>
+    <td>{% include status.html is='wip' %}</td>
+  </tr>
+</table>
+
+<br/>
+Last updated: June 2025

@@ -1,0 +1,265 @@
+/* overrides: https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/minimal-mistakes.scss */
+
+/* ORIGINAL THEME STUFF */
+/* Copyright comment */
+@import "minimal-mistakes/copyright";
+
+/* Variables */
+@import "minimal-mistakes/variables";
+
+/* Mixins and functions */
+@import "minimal-mistakes/vendor/breakpoint/breakpoint";
+@include breakpoint-set("to ems", true);
+@import "minimal-mistakes/vendor/magnific-popup/magnific-popup"; // Magnific Popup
+@import "minimal-mistakes/vendor/susy/susy";
+@import "minimal-mistakes/mixins";
+
+/* Core CSS */
+@import "minimal-mistakes/reset";
+@import "minimal-mistakes/base";
+@import "minimal-mistakes/forms";
+@import "minimal-mistakes/tables";
+@import "minimal-mistakes/animations";
+
+/* Components */
+@import "minimal-mistakes/buttons";
+@import "minimal-mistakes/notices";
+@import "minimal-mistakes/masthead";
+@import "minimal-mistakes/navigation";
+@import "minimal-mistakes/footer";
+@import "minimal-mistakes/search";
+@import "minimal-mistakes/syntax";
+
+/* Utility classes */
+@import "minimal-mistakes/utilities";
+
+/* Layout specific */
+@import "minimal-mistakes/page";
+@import "minimal-mistakes/archive";
+@import "minimal-mistakes/sidebar";
+@import "minimal-mistakes/print";
+
+
+/* CUSTOM ADDITIONS */
+/* Custom stylesheets */
+@import "status";
+@import "pseudolink";
+
+/* Custom classes */
+.no-top-margin {
+  margin-top: 0px !important;
+}
+
+.ico-ext { // external link marker
+    margin-left: 6px;
+}
+
+.wide2 { // no sidebars
+  .page {
+    clear:both;
+    float: none;
+    margin: 0 auto;
+    max-width: 880px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .page__related {
+    float: none;
+    margin: 2em auto 0;
+    max-width: 960px;
+    width: auto;
+  }
+
+  .pagination {
+    margin-bottom: 2em;
+  }
+}
+
+.wide3 { // only right sidebar, https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-571208318
+  .page {
+    float: left;
+    width: 100%;
+    max-width: 1235px;
+
+    @include breakpoint($large) {
+      padding-left: 10%;
+    }
+
+    @include breakpoint($x-large) {
+      padding-left: 10%;
+    }
+  }
+}
+
+/* Theme overrides */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.grid__item {
+  .archive__item-teaser {
+      @include breakpoint($small) {
+        max-height: 200px;
+      }
+
+      @include breakpoint($medium) {
+        max-height: 150px;
+      }
+    }
+}
+
+.sidebar__right {
+  margin-bottom: 45px;
+}
+
+.wide { // only left sidebar
+  .page {
+    float: left;
+    max-width: 940px;
+    width: 100%;
+
+    @include breakpoint($large) {
+      padding-left: 25px;
+    }
+  }
+}
+
+.notice {
+    border-radius: 0;
+    margin: 1em 0 !important;  /* override */
+    padding: 10px;
+    font-size: $type-size-5 !important;
+    font-style: normal;
+
+    border-left: 0.25em solid $light-gray !important;
+}
+
+.notice--primary {
+    border-radius: 0;
+    margin: 1em 0 !important;  /* override */
+    padding: 10px;
+    font-size: $type-size-5 !important;
+    font-style: normal;
+
+    border-left: 0.25em solid $primary-color !important;
+}
+
+.notice--info {
+    border-radius: 0;
+    margin: 1em 0 !important;  /* override */
+    padding: 10px;
+    font-size: $type-size-5 !important;
+    font-style: normal;
+
+    background-color: rgba(63, 188, 244, .25) !important;
+    border-left: 0.25em solid #1f86b5 !important;
+}
+
+@media (prefers-color-scheme: light) {
+  .notice--info {
+    color: #2b5f76;
+  }
+
+  .notice--info a {
+      color: #2b5f76;
+  }
+}
+
+.notice--warning {
+    border-radius: 0;
+    margin: 1em 0 !important;  /* override */
+    padding: 10px;
+    font-size: $type-size-5 !important;
+    font-style: normal;
+
+    background-color: rgba(255, 229, 100, .25) !important;
+    border-left: 0.25em solid #e7c000 !important;
+}
+
+@media (prefers-color-scheme: light) {
+  .notice--warning {
+    color: #6b5900;
+  }
+
+  .notice--warning a {
+      color: #6b5900;
+  }
+}
+
+.notice--success {
+    border-radius: 0;
+    margin: 1em 0 !important;  /* override */
+    padding: 10px;
+    font-size: $type-size-5 !important;
+    font-style: normal;
+
+    background-color: rgba(112, 205, 162, .25) !important;
+    border-left: 0.25em solid #42b983 !important;
+}
+
+@media (prefers-color-scheme: light) {
+  .notice--success {
+      color: #215d42;
+  }
+
+  .notice--success a {
+      color: #215d42;
+  }
+}
+
+.notice--danger {
+    border-radius: 0;
+    margin: 1em 0 !important;  /* override */
+    padding: 10px;
+    font-size: $type-size-5 !important;
+    font-style: normal;
+
+    background-color: rgba(255, 72, 72, .25) !important;
+    border-left: 0.25em solid #c00 !important;
+}
+
+@media (prefers-color-scheme: light) {
+  .notice--danger {
+      color: #600;
+  }
+
+  .notice--danger a {
+      color: #600;
+  }
+}
+
+/* Container to handle spacing between Title and Tags */
+.tools__item-tags {
+  display: block;
+  line-height: 0;
+  margin-bottom: 8px;
+}
+
+/* Base Tag Style */
+.tools__item-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  background-color: transparent;
+  color: #777;
+  margin-right: 4px;
+}
+
+/* PAID Tag: Gold border and text */
+.tag--paid {
+  border-color: #d4b000;
+  color: #d4b000;
+}
+
+/* FREE Tag: Green border and text */
+.tag--free {
+  border-color: #4caf50;
+  color: #4caf50;
+}
