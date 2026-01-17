@@ -7,19 +7,19 @@
 # The variables herein can be accessed via {{ site.title }}, {{ site.email }},
 # and so on.
 #
-title: "libGDX"
+title: "EoaNBR"
 minimal_mistakes_skin: "default"
 minimal_mistakes_skin_dark: "dark"
 
 logo: "/assets/brand/logo.svg"
 logo_dark: "/assets/brand/logo_dark.svg"
 masthead_title: " " # disable the written title in the header
-description: "From paddling townships to the chimes of the greatest cities, markets crowd with the exchange of wears. Across the hilltops away, a crew of toolsmiths follow the blueprints to create factory machinery - replicable ones at that. Finally, at the port side bays, in an undistinguished warehouse, a new line of ships will break the waves. A new era is beginning. Don't get left behind."
-github_username: libgdx
+description: "A new era is beginning. Don't get left behind."
+github_username: team-eoanb-redux
 enable_copy_code_button: true
 
-repository: libgdx/libgdx.github.io
-url: https://libgdx.com
+repository: team-eoanb-redux/team-eoanb-redux.github.io
+url: https://eoanbr.com
 baseurl: "" # prevent jekyll-github-metadata from setting an unwanted default value
 
 # Search, Google
