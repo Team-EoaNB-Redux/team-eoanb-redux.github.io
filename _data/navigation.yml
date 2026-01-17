@@ -1,15 +1,15 @@
 # Main Top Nav Bar
 main:
-  - title: "News"
+  - title: "Updates"
     url: /news/
   - title: "Features"
-    url: /features/
-  - title: "Showcase"
-    url: /showcase/
+    url: /wiki/
   - title: "Documentation"
     url: /dev/
   - title: "Community"
     url: /community/
+  - title: "About"
+    url: /team/
 # /wiki/ Top Nav Bar
 wiki:
   - title: "Back to Main Site"
