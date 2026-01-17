@@ -1,6 +1,6 @@
 ---
-permalink: /community/
-title: "Community"
+permalink: /team/
+title: "Team"
 classes: wide2
 header:
   overlay_color: "#000"
