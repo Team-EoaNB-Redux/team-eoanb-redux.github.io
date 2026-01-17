@@ -3657,6 +3657,7 @@ body {
 
 .page__hero--overlay .page__title,.page__hero--overlay .page__meta,.page__hero--overlay .comment__date,.page__hero--overlay .page__lead,.page__hero--overlay .btn {
     color: #dcdcdc;
+		font-family: Monaco,Consolas,"Lucida Console",monospace;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5)
 }
 
